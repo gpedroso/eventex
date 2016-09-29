@@ -9,9 +9,9 @@ from django.conf import settings
 
 def subscribe(request):
     if request.method == 'POST':
-      return create(request)
+        return create(request)
     else:
-      return new(request)
+        return new(request)
 
 def create(request):
     form = SubscriptionForm(request.POST)
