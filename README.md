@@ -2,6 +2,26 @@
 
 Sistema de eventos encomendado pela Morena.
 
+[![Build Status](https://travis-ci.org/gpedroso/eventex.svg?branch=master)](https://travis-ci.org/gpedroso/eventex)
+[![Code Health](https://landscape.io/github/gpedroso/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/gpedroso/eventex/master)
+
+Textile
+
+!https://landscape.io/github/gpedroso/eventex/master/landscape.svg?style=flat!:https://landscape.io/github/gpedroso/eventex/master
+
+RST / Sphinx
+
+.. image:: https://landscape.io/github/gpedroso/eventex/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/gpedroso/eventex/master
+   :alt: Code Health
+
+HTML
+
+<a href="https://landscape.io/github/gpedroso/eventex/master">
+  <img alt="Code Health" src="https://landscape.io/github/gpedroso/eventex/master/landscape.svg?style=flat"/>
+</a>
+
+
 ## Como desenvolver
 
 1. clone o repositório
