@@ -7,7 +7,7 @@ class Subscription(models.Model):
 	email = models.EmailField('E-mail')
 	phone = models.CharField('Telefone', max_length=20)
 	created_at = models.DateTimeField('Criado em', auto_now_add=True)
-	hashId = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=False)
+	#hashId = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=False)
 
 	# models.UUIDField(primary_key=False, default=uuid.uuid4, editable=False)
 
