@@ -23,24 +23,11 @@
 
 	<body>
         <div class="header-frame row">
-            <header class="header header-inline min-h-3 row desktop-12 container" role="banner">
-
-                <div class="site-logo">
-                    <h1><a href="{% url 'home' %}" rel="home">Eventex</h1>
-                    <p class="site-description screen-reader-only">O maior encontro hacker do mundo!</p>
-                </div>
-
-                <nav class="nav-inline" role="navigation">
-                    <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
-                    <ul>
-                        <li><a data-scroll href="{% url 'home' %}#overview">Conferência</a></li>
-                        <li><a data-scroll href="{% url 'home' %}#sponsors">Patrocinadores</a></li>
-                        <li><a data-scroll href="{% url 'home' %}#register">Inscrição</a></li>
-                        <li><a data-scroll href="{% url 'home' %}#venue">Local</a></li>
-                    </ul>
-                </nav>
-
-            </header>
+            {% include 'nav.html' only %}
+            <!-- o comando only indica que não será passada variável de contexto pelo include
+                poderia ser necessário controlar variáveis nas views, dificultando a gestão
+                usando o only, para passar uma variável de contexto eu teria que explicitar:
+                 include 'nav.html' var=valor only  -->
         </div>
 
         {% block content %}
